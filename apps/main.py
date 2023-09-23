@@ -8,7 +8,7 @@ app = FastAPI()
 
 #this is used to create the models defined in python to the database when we r not using alembic
 #alembic can create database by using alembic revision --autogenerate
-# model.Base.metadata.create_all(bind=engine)
+model.Base.metadata.create_all(bind=engine)
 
 origins = ["*"]
 app.add_middleware(
